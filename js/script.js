@@ -1,8 +1,8 @@
 'use strict';
-//Якоря
+// собираем все якоря; устанавливаем время анимации и количество кадров
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-  animationTime = 300,
-  framesCount = 20;
+      animationTime = 300,
+      framesCount = 20;
 
 anchors.forEach(function(item) {
   // каждому якорю присваиваем обработчик события
@@ -20,7 +20,7 @@ anchors.forEach(function(item) {
 
       // если к-во пикселей для скролла за 1 такт больше расстояния до элемента
       // и дно страницы не достигнуто
-      if (scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
+      if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
         // то скроллим на к-во пикселей, которое соответствует одному такту
         window.scrollBy(0, scrollBy);
       } else {
@@ -28,7 +28,7 @@ anchors.forEach(function(item) {
         window.scrollTo(0, coordY);
         clearInterval(scroller);
       }
-      // время интервала равняется частному от времени анимации и к-ва кадров
+    // время интервала равняется частному от времени анимации и к-ва кадров
     }, animationTime / framesCount);
   });
 });
