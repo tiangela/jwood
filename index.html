@@ -11,28 +11,30 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="home">
     <div class="header__wrapper">
+      <div class="header__container">
       <nav class="menu menu--closed menu--nojs">
         <button class="menu__toggle" type="button">Открыть меню</button>
         <div class="menu__wrapper">
           <ul class="menu__list">
             <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
             <li class="menu__item"><a class="menu__link" href="#about">About me</a></li>
-            <li class="menu__item menu__item"><a class="menu__link" href="#portfolio">Portfolio</a></li>
-            <li class="menu__item menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+            <li class="menu__item"><a class="menu__link" href="#portfolio">Portfolio</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--contact" href="#contact">Contact</a></li>
           </ul>
         </div>
-      </nav>
-      <div class="home" id="home">
+        <div class="menu__container">
         <picture>
-          <source media="(min-width: 1200px)" srcset="">
-          <source class="home__logo home__logo--tablet" media="(min-width: 700px)" srcset="img/Logo-tab.jpg">
-          <img class="home__logo home__logo--mobile" src="img/Logo-mob.png" alt="Логотип">
+          <source class="menu__logo menu__logo--desktop" media="(min-width: 1200px)" srcset="img/Logo-desk.jpg">
+          <source class="menu__logo menu__logo--tablet" media="(min-width: 700px)" srcset="img/Logo-tab.jpg">
+          <img class="menu__logo menu__logo--mobile" src="img/Logo-mob.png" alt="Логотип">
         </picture>
-        <h1 class="home__title"><span>Jwood</span>photography</h1>
-      </div>
+        <h1 class="menu__title"><span>Jwood</span>photography</h1>
+        </div>
+      </nav>
     <span class="scroll scroll--header">Scroll down to see more</span>
+    </div>
     </div>
   </header>
   <main class="main">
