@@ -346,6 +346,7 @@ h3 {
 }
 .menu--closed .menu__container {
   display: block;
+  margin-bottom: 30px;
 }
 .menu--closed .menu__wrapper {
   display: none;
@@ -445,4 +446,36 @@ h3 {
 .menu__title span {
   font-family: "Nexabold", Arial, sans-serif;
   font-weight: bold;
+}
+.scroll {
+  padding__top: 30px;
+  padding-bottom: 45px;
+  position: relative;
+  text-align: center;
+}
+.scroll::after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  bottom: 0;
+  right: 40%;
+  background-image: url("../img/scroll-icon-dark.png");
+  background-repeat: no-repeat;
+}
+.scroll--header::after {
+  background-image: url("../img/scroll-icon.png");
+}
+.scroll__text {
+  font-family: "Nexabold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 2px;
+  position: relative;
+}
+.scroll__text--header {
+  color: #f1f1f1;
+}
+.scroll__text--about {
+  color: #bebebe;
 }

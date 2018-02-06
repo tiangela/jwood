@@ -14,27 +14,29 @@
   <header class="header" id="home">
     <div class="header__wrapper">
       <div class="header__container">
-      <nav class="menu menu--closed menu--nojs">
-        <button class="menu__toggle" type="button">Открыть меню</button>
-        <div class="menu__wrapper">
-          <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#about">About me</a></li>
-            <li class="menu__item"><a class="menu__link" href="#portfolio">Portfolio</a></li>
-            <li class="menu__item"><a class="menu__link menu__link--contact" href="#contact">Contact</a></li>
-          </ul>
+        <nav class="menu menu--closed menu--nojs">
+          <button class="menu__toggle" type="button">Открыть меню</button>
+          <div class="menu__wrapper">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#about">About me</a></li>
+              <li class="menu__item"><a class="menu__link" href="#portfolio">Portfolio</a></li>
+              <li class="menu__item"><a class="menu__link menu__link--contact" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu__container">
+            <picture>
+              <source class="menu__logo menu__logo--desktop" media="(min-width: 1200px)" srcset="img/Logo-desk.jpg">
+              <source class="menu__logo menu__logo--tablet" media="(min-width: 700px)" srcset="img/Logo-tab.jpg">
+              <img class="menu__logo menu__logo--mobile" src="img/Logo-mob.png" alt="Логотип">
+            </picture>
+            <h1 class="menu__title"><span>Jwood</span>photography</h1>
+          </div>
+        </nav>
+        <div class="scroll scroll--header">
+          <span class="scroll__text scroll__text--header">Scroll down to see more</span>
         </div>
-        <div class="menu__container">
-        <picture>
-          <source class="menu__logo menu__logo--desktop" media="(min-width: 1200px)" srcset="img/Logo-desk.jpg">
-          <source class="menu__logo menu__logo--tablet" media="(min-width: 700px)" srcset="img/Logo-tab.jpg">
-          <img class="menu__logo menu__logo--mobile" src="img/Logo-mob.png" alt="Логотип">
-        </picture>
-        <h1 class="menu__title"><span>Jwood</span>photography</h1>
-        </div>
-      </nav>
-    <span class="scroll scroll--header">Scroll down to see more</span>
-    </div>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -50,7 +52,9 @@
         <p class="about__text about__text--indent">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <div class="about__sign"></div>
       </article>
-      <span class="scroll scroll--about">Keep scrolling, there is still more to come.</span>
+      <div class="scroll">
+        <span class="scroll__text scroll__text--about">Keep scrolling,<br> there is still more to come.</span>
+      </div>
       <nav class="menu menu--main">
         <div class="menu__wrapper">
           <ul class="menu__list">
@@ -65,39 +69,101 @@
         <h2 class="portfolio__title" id="portfolio">Portfolio</h2>
         <ul class="portfolio__list">
           <li class="portfolio__item">
-            <img src="img/01.jpg" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/01-desk.jpg">
+                <source class="portfolio__img-tablet" media="(min-width: 700px)" srcset="img/01-tab.jpg">
+                <img src="img/01.jpg" alt="Portfolio Image" class="portfolio__img">
+              </picture>
+            </a>
           </li>
           <li class="portfolio__item">
-            <img src="img/02.jpg" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/02-desk.jpg">
+                <source class="portfolio__img-tablet" media="(min-width: 700px)" srcset="img/02-tab.jpg">
+                <img src="img/02.jpg" alt="Portfolio Image" class="portfolio__img">
+              </picture>
+            </a>
           </li>
           <li class="portfolio__item">
-            <img src="img/03.jpg" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/03-desk.jpg">
+                <source class="portfolio__img-tablet" media="(min-width: 700px)" srcset="img/03-tab.jpg">
+                <img src="img/03.jpg" alt="Portfolio Image" class="portfolio__img">
+              </picture>
+            </a>
           </li>
           <li class="portfolio__item">
-            <img src="img/04.jpg" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/04-desk.jpg">
+                <source class="portfolio__img-tablet" media="(min-width: 700px)" srcset="img/04-tab.jpg">
+                <img src="img/04.jpg" alt="Portfolio Image" class="portfolio__img">
+              </picture>
+            </a>
           </li>
           <li class="portfolio__item">
-            <img src="img/05.jpg" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/05-desk.jpg">
+                <source class="portfolio__img-tablet" media="(min-width: 700px)" srcset="img/05-tab.jpg">
+                <img src="img/05.jpg" alt="Portfolio Image" class="portfolio__img">
+              </picture>
+            </a>
           </li>
           <li class="portfolio__item">
-            <img src="img/06.jpg" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/06-desk.jpg">
+                <source class="portfolio__img-tablet" media="(min-width: 700px)" srcset="img/06-tab.jpg">
+                <img src="img/06.jpg" alt="Portfolio Image" class="portfolio__img">
+              </picture>
+            </a>
           </li>
           <li class="portfolio__item">
-            <img src="img/07.jpg" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/07-desk.jpg">
+                <source class="portfolio__img-tablet" media="(min-width: 700px)" srcset="img/07-tab.jpg">
+                <img src="img/07.jpg" alt="Portfolio Image" class="portfolio__img">
+              </picture>
+            </a>
           </li>
           <li class="portfolio__item">
-            <img src="img/08.jpg" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/08-desk.jpg">
+                <source class="portfolio__img-tablet" media="(min-width: 700px)" srcset="img/08-tab.jpg">
+                <img src="img/08.jpg" alt="Portfolio Image" class="portfolio__img">
+              </picture>
+            </a>
           </li>
           <li class="portfolio__item">
-            <img src="img/09.jpg" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/09-desk.jpg">
+                <source class="portfolio__img-tablet" media="(min-width: 700px)" srcset="img/09-tab.jpg">
+                <img src="img/09.jpg" alt="Portfolio Image" class="portfolio__img">
+              </picture>
+            </a>
           </li>
           <li class="portfolio__item">
-            <img src="img/10.jpg" alt="" class="portfolio__img">
+            <a href="#" class="portfolio__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/10-desk.jpg">
+                <source class="portfolio__img-tablet" media="(min-width: 700px)" srcset="img/10-tab.jpg">
+                <img src="img/10.jpg" alt="Portfolio Image" class="portfolio__img">
+              </picture>
+            </a>
           </li>
         </ul>
       </article>
-      <span class="scroll scroll--portfolio">Keep scrolling, there is still more to come.</span>
-      <nav class="menu menu--footer">
+      <div class="scroll">
+        <span class="scroll__text scroll__text--portfolio">Do you want to see it with your own eyes? Scroll!</span>
+      </div>
+        <nav class="menu menu--footer">
         <div class="menu__wrapper">
           <ul class="menu__list">
             <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>

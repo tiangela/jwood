@@ -1,0 +1,35 @@
+.scroll {
+  padding__top: 30px;
+  padding-bottom: 45px;
+  position: relative;
+  text-align: center;
+}
+
+.scroll::after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  bottom: 0;
+  right: 40%;
+  background-image: url("../img/scroll-icon-dark.png");
+  background-repeat: no-repeat;
+}
+
+.scroll--header::after {
+  background-image: url("../img/scroll-icon.png");
+}
+
+.scroll__text {
+  font-family: "Nexabold", Arial, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 2px;
+    position: relative;
+  &--header {
+    color: @text-white;
+    }
+  &--about {
+    color: @light-grey;
+  }
+}
