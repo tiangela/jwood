@@ -238,6 +238,20 @@ h3 {
   padding: 0;
   margin: 0;
 }
+.about__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .about__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .about__wrapper {
+    width: 1117px;
+  }
+}
 .about__title {
   padding: 0;
   margin: 0;
@@ -266,6 +280,40 @@ h3 {
   height: 28px;
   background: url("../img/sign.jpg") no-repeat;
   margin-bottom: 45px;
+}
+.contacts__container {
+  display: -webkit-box;
+  display: flex;
+}
+.contacts__social {
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  width: 57px;
+  height: 57px;
+}
+.contacts__social--fb {
+  background-position: -5px -5px;
+}
+.contacts__social--tw {
+  background-position: -139px -5px;
+}
+.contacts__social--inst {
+  background-position: -72px -5px;
+}
+.footer__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  .footer__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__wrapper {
+    width: 1117px;
+  }
 }
 .header {
   background-image: url("../img/bg-wrp-mob.jpg");
@@ -447,6 +495,51 @@ h3 {
   font-family: "Nexabold", Arial, sans-serif;
   font-weight: bold;
 }
+.portfolio {
+  position: relative;
+  background-image: url("../img/Background-Portf.jpg");
+  background-color: #010608;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 923px;
+  margin-top: 40px;
+}
+.portfolio__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .portfolio__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio__wrapper {
+    width: 1117px;
+  }
+}
+.portfolio__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Nexalight", Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  line-height: 120px;
+  color: #f1f1f1;
+}
+.portfolio__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.portfolio__item {
+  margin-bottom: 18px;
+}
 .scroll {
   padding__top: 30px;
   padding-bottom: 45px;
@@ -459,7 +552,7 @@ h3 {
   width: 32px;
   height: 32px;
   bottom: 0;
-  right: 40%;
+  right: 43%;
   background-image: url("../img/scroll-icon-dark.png");
   background-repeat: no-repeat;
 }
@@ -476,6 +569,7 @@ h3 {
 .scroll__text--header {
   color: #f1f1f1;
 }
-.scroll__text--about {
+.scroll__text--about,
+.scroll__text--portfolio {
   color: #bebebe;
 }
