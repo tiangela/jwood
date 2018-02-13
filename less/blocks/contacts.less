@@ -1,0 +1,39 @@
+.contacts__container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid @light-grey;
+}
+
+.contacts__title {
+  font-family: "Nexabold", Arial, sans-serif;
+  font-size: 14px;
+
+}
+
+.contacts__info {
+  font-family: "Nexalight", Arial, sans-serif;
+  font-size: 24px;
+}
+
+.contacts__social {
+    background-image: url("../img/spritesheet.png");
+    background-repeat: no-repeat;
+    width: 57px;
+    height: 57px;
+    font-size: 0;
+    margin-right: 26px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &--fb {
+      background-position: -5px -5px;
+    }
+    &--tw {
+      background-position: -139px -5px;
+    }
+    &--inst {
+      background-position: -72px -5px;
+    }
+}
