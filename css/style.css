@@ -284,12 +284,30 @@ h3 {
 .contacts__container {
   display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #bebebe;
+}
+.contacts__title {
+  font-family: "Nexabold", Arial, sans-serif;
+  font-size: 14px;
+}
+.contacts__info {
+  font-family: "Nexalight", Arial, sans-serif;
+  font-size: 24px;
 }
 .contacts__social {
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
   width: 57px;
   height: 57px;
+  font-size: 0;
+  margin-right: 26px;
+}
+.contacts__social:last-child {
+  margin-right: 0;
 }
 .contacts__social--fb {
   background-position: -5px -5px;
@@ -304,6 +322,7 @@ h3 {
   width: 280px;
   margin: 0 auto;
   text-align: center;
+  color: #202020;
 }
 @media (min-width: 700px) {
   .footer__wrapper {
@@ -314,6 +333,14 @@ h3 {
   .footer__wrapper {
     width: 1117px;
   }
+}
+.footer__copyright {
+  color: #dedede;
+  font-size: 14px;
+  font-family: "Nexalight", Arial, sans-serif;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .header {
   background-image: url("../img/bg-wrp-mob.jpg");
