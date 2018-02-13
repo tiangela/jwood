@@ -370,6 +370,7 @@ h3 {
     width: 1117px;
   }
 }
+<<<<<<< HEAD
 .menu {
   margin: 0 auto;
   position: relative;
@@ -503,6 +504,25 @@ h3 {
 .menu__title span {
   font-family: "Nexabold", Arial, sans-serif;
   font-weight: bold;
+=======
+.main {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.main__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 700px) {
+  .main__wrapper {
+    width: 620px;
+  }
+}
+@media (min-width: 1200px) {
+  .main__wrapper {
+    width: 1117px;
+  }
+>>>>>>> mobile_version
 }
 .menu {
   margin: 0 auto;
