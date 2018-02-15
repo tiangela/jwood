@@ -145,3 +145,27 @@
     font-weight: bold;
   }
 }
+
+@media @tablet-widths {
+  .menu {
+    padding-top: 80px;
+    &--open::before {
+      left: 30px;
+    }
+  }
+
+  .menu__link {
+    padding-bottom: 45px;
+    &--contact{
+    padding-bottom: 0;
+    }
+  }
+
+  .menu__wrapper {
+    width: 312px;
+    margin-left: 40px;
+    padding-top: 47px;
+    padding-bottom: 50px;
+  }
+
+}
