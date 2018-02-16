@@ -9,12 +9,15 @@
 .contacts__title {
   font-family: "Nexabold", Arial, sans-serif;
   font-size: 14px;
-
 }
 
 .contacts__info {
   font-family: "Nexalight", Arial, sans-serif;
   font-size: 24px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .contacts__social {
@@ -36,4 +39,18 @@
     &--inst {
       background-position: -72px -5px;
     }
+}
+
+@media @tablet-widths {
+  .contacts__container {
+    padding-bottom: 74px;
+  }
+   .contacts__title {
+     font-size: 30px;
+   }
+   .contacts__info {
+     font-size: 50px;
+     margin-top: 47px;
+     margin-bottom: 63px;
+   }
 }

@@ -46,7 +46,7 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('menu--closed');
     navMain.classList.add('menu--open');
     scroll.classList.add('scroll--js');
-//    scroll.classList.remove('scroll--nojs');
+
   } else {
     navMain.classList.add('menu--closed');
     navMain.classList.remove('menu--open');
