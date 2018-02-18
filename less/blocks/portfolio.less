@@ -6,6 +6,7 @@
   background-position: center;
   min-height: 923px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .portfolio__wrapper {
@@ -17,8 +18,6 @@
   margin: 0;
   font-family: "Nexalight", Arial, sans-serif;
   font-weight: lighter;
-  font-size: 40px;
-  line-height: 120px;
   color: @text-white;
 }
 
@@ -33,4 +32,15 @@
 
 .portfolio__item {
   margin-bottom: 18px;
+}
+
+@media @tablet-widths {
+  .portfolio__item {
+    &--no-tab {
+      display: none;
+    }
+  }
+  .portfolio__list {
+    margin-bottom: 100px;
+  }
 }

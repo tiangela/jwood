@@ -3,6 +3,10 @@
   padding-bottom: 45px;
   position: relative;
   text-align: center;
+  display: block;
+  &--js {
+    display: none;
+  }
 }
 
 .scroll::after {
@@ -11,7 +15,7 @@
   width: 32px;
   height: 32px;
   bottom: 0;
-  right: 43%;
+  right: 47%;
   background-image: url("../img/scroll-icon-dark.png");
   background-repeat: no-repeat;
 }
@@ -29,7 +33,19 @@
   &--header {
     color: @text-white;
     }
+  &--about span {
+    display: block;
+  }
   &--about, &--portfolio {
     color: @light-grey;
+  }
+}
+
+@media @tablet-widths {
+  .scroll__text {
+    font-size: 18px;
+    &--about span {
+      display: inline;
+    }
   }
 }
