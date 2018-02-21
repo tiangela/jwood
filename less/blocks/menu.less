@@ -1,12 +1,15 @@
 .menu {
   margin: 0 auto;
   position: relative;
+
   &--main {
     display: none;
   }
+
   &--footer {
     display: none;
   }
+
   .menu__toggle {
     position: absolute;
     top: -80px;
@@ -14,70 +17,76 @@
     z-index: 40;
     display: block;
     width: 32px;
-    height: 32px;
+    height: 25px;
     font-size: 0;
     cursor: pointer;
     border: none;
     background-color: inherit;
   }
-  &--closed  {
+
+  &--closed {
     .menu__toggle::before {
       content: "";
       position: absolute;
       width: 35px;
       height: 25px;
-      right: 0px;
-      top: 0px;
+      right: 0;
+      top: 0;
       background-image: url("../img/burger_icon-mob.png");
       background-repeat: no-repeat;
-}
-
-.menu__container {
-  display: block;
-  margin-bottom: 30px;
-}
-.menu__wrapper {
-  display: none;
-}
     }
 
-&--open {
-  .menu__container {
-  display: none;
-}
-.menu__toggle::before {
-  content: "";
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  font-size: 0;
-  top: 0;
-  right: 0;
-  background-image: url("../img/icon_close-mob.png");
-  background-repeat: no-repeat;
-}
+    .menu__container {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    .menu__wrapper {
+      display: none;
+    }
   }
 
-&--open::before {
-      position: absolute;
-      width: 45px;
-      height: 45px;
+  &--open {
+    .menu__container {
+      display: none;
+    }
+
+    .menu__toggle::before {
       content: "";
-      background-image: url("../img/Logo-mini.png");
-      top: -85px;
-      left: 0;
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      font-size: 0;
+      top: 0;
+      right: 0;
+      background-image: url("../img/icon_close-mob.png");
+      background-repeat: no-repeat;
     }
-    &--nojs {
-      .menu__toggle {
-        display: none;
-      }
-      .menu__wrapper {
-        position: static;
-        }
-        .menu__list{
-        display: block;
+  }
+
+  &--open::before {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    content: "";
+    background-image: url("../img/Logo-mini.png");
+    top: -85px;
+    left: 0;
+  }
+
+  &--nojs {
+    .menu__toggle {
+      display: none;
     }
+
+    .menu__wrapper {
+      position: static;
     }
+
+    .menu__list {
+      display: block;
+    }
+  }
 }
 
 .menu__list {
@@ -88,23 +97,20 @@
   padding: 0;
 }
 
-.menu__item {
+.menu__link {
   font-family: "Nexalight", Arial, sans-serif;
   font-weight: lighter;
   font-size: 24px;
   line-height: normal;
-  color: @text-white;
-}
-
-.menu__link {
   display: block;
   text-decoration: none;
   color: @text-white;
   text-align: left;
   padding-left: 24px;
   padding-bottom: 32px;
-  &--contact{
-  padding-bottom: 0;
+
+  &--contact {
+    padding-bottom: 0;
   }
 }
 
@@ -119,14 +125,14 @@
   font-family: "Nexalight", Arial, sans-serif;
   font-weight: lighter;
   color: @text-white;
-  display: inline-block;
+  display: block;
   padding-top: 18px;
+
   span {
     font-family: "Nexabold", Arial, sans-serif;
     font-weight: bold;
   }
 }
-
 @media @tablet-widths {
   .menu {
     &--open::before {
@@ -140,11 +146,56 @@
     &--contact {
       padding-bottom: 0;
     }
-}
+  }
+
   .menu__wrapper {
     width: 312px;
     margin-left: 40px;
     padding-top: 47px;
     padding-bottom: 50px;
+  }
+}
+@media @desktop-widths {
+  .menu {
+    &--main {
+      display: block;
+    }
+    .menu__toggle {
+      display: none;
+    }
+    .menu__title {
+      padding-bottom: 32px;
+    }
+
+    .menu__link {
+      font-size: 15px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      &--main {
+        color: @border-grey;
+      }
+    }
+
+    .menu__wrapper {
+      width: inherit;
+      padding-top: 0;
+      padding-bottom: 0;
+      border-top: none;
+      display: block;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-bottom: 45px;
+    }
+
+    .menu__list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .menu__container {
+      margin-top: 45px;
+    }
   }
 }

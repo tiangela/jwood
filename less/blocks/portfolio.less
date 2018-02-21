@@ -25,6 +25,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -35,6 +36,10 @@
 }
 
 @media @tablet-widths {
+  .portfolio {
+   background-image: url("../img/Background-Portf-tab.jpg");
+ }
+
   .portfolio__item {
     &--no-tab {
       display: none;
@@ -42,5 +47,22 @@
   }
   .portfolio__list {
     margin-bottom: 100px;
+  }
+}
+
+@media @desktop-widths {
+  .portfolio__wrapper {
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .portfolio__item {
+    margin-bottom: 24px;
+    &--no-tab {
+      display: block;
+    }
+  }
+  .portfolio__list {
+    width: 996px;
   }
 }
