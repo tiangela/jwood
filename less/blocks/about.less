@@ -1,5 +1,5 @@
  .about__wrapper {
-  .container ();
+.container ();
 }
 .about__title {
   color: @dark-grey;
@@ -40,7 +40,33 @@
 
 @media @desktop-widths {
   .about {
-    padding-left: 50px;
-    padding-right: 50px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  .about__img {
+    margin-left: 50px;
   }
+  .about__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+ .about__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 435px;
+  margin-left: 33px;
+}
+.about__text {
+  font-size: 15px;
+  line-height: 31px;
+  padding-right: 33px;
+  &--indent {
+    margin-top: 20px;
+  }
+}
+.about__sign {
+  width: 99px;
+  height: 15px;
+  background: url("../img/sign_desk.jpg") no-repeat;
+ }
 }

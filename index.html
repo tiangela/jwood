@@ -50,23 +50,25 @@
         </ul>
       </div>
     </nav>
-    <div class="about__wrapper">
-      <article class="about">
+      <section class="about">
+        <div class="about__wrapper">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/Jason-Wood-desk.jpg">
           <source class="about__img-tablet" media="(min-width: 700px)" srcset="img/Jason-Wood-tab.jpg">
           <img class="about__img" src="img/Jason-Wood.jpg" alt="Wood's photo">
         </picture>
+        <div class="about__container">
         <h2 class="about__title" id="about">About me</h2>
         <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p class="about__text about__text--indent">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         <div class="about__sign"></div>
-      </article>
-      <div class="scroll">
+        </div>
+        </div>
+        <div class="scroll">
         <span class="scroll__text scroll__text--about"><span>Keep scrolling,</span> there is still more to come.</span>
       </div>
-      </div>
-      <article class="portfolio">
+      </section>
+      <section class="portfolio">
         <nav class="menu menu--main">
           <div class="menu__wrapper">
             <ul class="menu__list">
@@ -77,10 +79,10 @@
             </ul>
           </div>
         </nav>
-        <div class="portfolio__wrapper">
+        <div class="portfolio__container">
         <h2 class="portfolio__title" id="portfolio">Portfolio</h2>
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
+          <div class="portfolio__wrapper">
+          <article class="portfolio__item">
             <a href="#" class="portfolio__link">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/01-desk.jpg">
@@ -88,8 +90,8 @@
                 <img src="img/01.jpg" alt="Portfolio Image" class="portfolio__img">
               </picture>
             </a>
-          </li>
-          <li class="portfolio__item">
+          </article>
+          <article class="portfolio__item">
             <a href="#" class="portfolio__link">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/02-desk.jpg">
@@ -97,8 +99,8 @@
                 <img src="img/02.jpg" alt="Portfolio Image" class="portfolio__img">
               </picture>
             </a>
-          </li>
-          <li class="portfolio__item">
+          </article>
+          <article class="portfolio__item">
             <a href="#" class="portfolio__link">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/03-desk.jpg">
@@ -106,8 +108,8 @@
                 <img src="img/03.jpg" alt="Portfolio Image" class="portfolio__img">
               </picture>
             </a>
-          </li>
-          <li class="portfolio__item">
+          </article>
+          <article class="portfolio__item">
             <a href="#" class="portfolio__link">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/04-desk.jpg">
@@ -115,8 +117,8 @@
                 <img src="img/04.jpg" alt="Portfolio Image" class="portfolio__img">
               </picture>
             </a>
-          </li>
-          <li class="portfolio__item">
+          </article>
+          <article class="portfolio__item">
             <a href="#" class="portfolio__link">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/05-desk.jpg">
@@ -124,8 +126,8 @@
                 <img src="img/05.jpg" alt="Portfolio Image" class="portfolio__img">
               </picture>
             </a>
-          </li>
-          <li class="portfolio__item">
+          </article>
+          <article class="portfolio__item">
             <a href="#" class="portfolio__link">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/06-desk.jpg">
@@ -133,8 +135,8 @@
                 <img src="img/06.jpg" alt="Portfolio Image" class="portfolio__img">
               </picture>
             </a>
-          </li>
-          <li class="portfolio__item">
+          </article>
+          <article class="portfolio__item">
             <a href="#" class="portfolio__link">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/07-desk.jpg">
@@ -142,8 +144,8 @@
                 <img src="img/07.jpg" alt="Portfolio Image" class="portfolio__img">
               </picture>
             </a>
-          </li>
-          <li class="portfolio__item">
+          </article>
+          <article class="portfolio__item">
             <a href="#" class="portfolio__link">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/08-desk.jpg">
@@ -151,8 +153,8 @@
                 <img src="img/08.jpg" alt="Portfolio Image" class="portfolio__img">
               </picture>
             </a>
-          </li>
-          <li class="portfolio__item">
+          </article>
+          <article class="portfolio__item">
             <a href="#" class="portfolio__link">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/09-desk.jpg">
@@ -160,8 +162,8 @@
                 <img src="img/09.jpg" alt="Portfolio Image" class="portfolio__img">
               </picture>
             </a>
-          </li>
-          <li class="portfolio__item portfolio__item--no-tab">
+          </article>
+          <article class="portfolio__item portfolio__item--no-tab">
             <a href="#" class="portfolio__link">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/10-desk.jpg">
@@ -169,13 +171,13 @@
                 <img src="img/10.jpg" alt="Portfolio Image" class="portfolio__img">
               </picture>
             </a>
-          </li>
-        </ul>
-        <div class="scroll">
+          </article>
+          </div>
+          <div class="scroll">
           <span class="scroll__text scroll__text--portfolio">Do you want to see it with your own eyes? Scroll!</span>
         </div>
         </div>
-      </article>
+      </section>
         <nav class="menu menu--footer">
         <div class="menu__wrapper">
           <ul class="menu__list">
@@ -189,7 +191,7 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <article class="contacts" id="contact">
+      <section class="contacts" id="contact">
         <h3 class="contacts__title">Mail</h3>
         <p class="contacts__info">Jason@wood.com</p>
         <h3 class="contacts__title">Phone</h3>
@@ -200,7 +202,7 @@
           <a href="#" class="contacts__social contacts__social--tw">Twitter</a>
           <a href="#" class="contacts__social contacts__social--inst">Instagram</a>
         </div>
-      </article>
+      </section>
       <p class="footer__copyright">Designed by Pawel Szymankiewicz</p>
     </div>
   </footer>
