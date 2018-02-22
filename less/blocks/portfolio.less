@@ -9,8 +9,14 @@
   margin-bottom: 40px;
 }
 
-.portfolio__wrapper {
+.portfolio__container {
   .container ();
+}
+.portfolio__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .portfolio__title {
@@ -51,10 +57,16 @@
 }
 
 @media @desktop-widths {
-  .portfolio__wrapper {
+  .portfolio{
     text-align: center;
-    padding-left: 60px;
-    padding-right: 60px;
+  }
+
+  .portfolio__wrapper {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
   }
   .portfolio__item {
     margin-bottom: 24px;

@@ -266,7 +266,9 @@ h3 {
 }
 @media (min-width: 1199px) {
   .about__wrapper {
-    width: 1200px;
+    width: 1199px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 .about__title {
@@ -304,8 +306,36 @@ h3 {
 }
 @media (min-width: 1199px) {
   .about {
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .about__img {
+    margin-left: 50px;
+  }
+  .about__wrapper {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about__container {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 435px;
+    margin-left: 33px;
+  }
+  .about__text {
+    font-size: 15px;
+    line-height: 31px;
+    padding-right: 33px;
+  }
+  .about__text--indent {
+    margin-top: 20px;
+  }
+  .about__sign {
+    width: 99px;
+    height: 15px;
+    background: url("../img/sign_desk.jpg") no-repeat;
   }
 }
 .contacts__container {
@@ -365,7 +395,9 @@ h3 {
 }
 @media (min-width: 1199px) {
   .footer__wrapper {
-    width: 1200px;
+    width: 1199px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 .footer__copyright {
@@ -410,7 +442,9 @@ h3 {
 }
 @media (min-width: 1199px) {
   .header__container {
-    width: 1200px;
+    width: 1199px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 @media (min-width: 700px) {
@@ -448,7 +482,9 @@ h3 {
 }
 @media (min-width: 1199px) {
   .main__wrapper {
-    width: 1200px;
+    width: 1199px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 @media (min-width: 1199px) {
@@ -579,7 +615,6 @@ h3 {
   }
   .menu__wrapper {
     width: 312px;
-    margin-left: 40px;
     padding-top: 47px;
     padding-bottom: 50px;
   }
@@ -603,13 +638,12 @@ h3 {
     color: #dcdcdc;
   }
   .menu .menu__wrapper {
-    width: inherit;
+    width: 1120px;
     padding-top: 0;
     padding-bottom: 0;
     border-top: none;
     display: block;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 auto;
     margin-bottom: 45px;
   }
   .menu .menu__list {
@@ -636,19 +670,29 @@ h3 {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.portfolio__wrapper {
+.portfolio__container {
   width: 280px;
   margin: 0 auto;
 }
 @media (min-width: 700px) {
-  .portfolio__wrapper {
+  .portfolio__container {
     width: 620px;
   }
 }
 @media (min-width: 1199px) {
-  .portfolio__wrapper {
-    width: 1200px;
+  .portfolio__container {
+    width: 1199px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
+}
+.portfolio__wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 .portfolio__title {
   padding: 0;
@@ -683,10 +727,17 @@ h3 {
   }
 }
 @media (min-width: 1199px) {
-  .portfolio__wrapper {
+  .portfolio {
     text-align: center;
-    padding-left: 60px;
-    padding-right: 60px;
+  }
+  .portfolio__wrapper {
+    width: 1000px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
   }
   .portfolio__item {
     margin-bottom: 24px;
