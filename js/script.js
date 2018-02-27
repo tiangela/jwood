@@ -15,8 +15,8 @@ anchors.forEach(function(item) {
 
     // запускаем интервал, в котором
     let scroller = setInterval(function() {
-      // считаем на сколько скроллить за 1 такт
-      let scrollBy = coordY / framesCount;
+        // считаем на сколько скроллить за 1 такт
+    let scrollBy = coordY / framesCount;
 
       // если к-во пикселей для скролла за 1 такт больше расстояния до элемента
       // и дно страницы не достигнуто
