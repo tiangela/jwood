@@ -382,6 +382,15 @@ h3 {
     font-size: 50px;
   }
 }
+@media (min-width: 1199px) {
+  .contacts__info {
+    font-size: 37.5px;
+    margin-bottom: 15px;
+  }
+  .contacts__container {
+    padding-top: 0;
+  }
+}
 .footer__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -635,16 +644,23 @@ h3 {
     padding-bottom: 25px;
   }
   .menu .menu__link--main {
-    color: #dcdcdc;
+    color: #cdcdcd;
+  }
+  .menu .menu__link--opacity {
+    opacity: 0.5;
   }
   .menu .menu__wrapper {
     width: 1120px;
     padding-top: 0;
     padding-bottom: 0;
     border-top: none;
+    border-bottom: 1px solid #cdcdcd;
     display: block;
     margin: 0 auto;
     margin-bottom: 45px;
+  }
+  .menu .menu__wrapper--opacity {
+    opacity: 0.8;
   }
   .menu .menu__list {
     width: 100%;
@@ -657,6 +673,7 @@ h3 {
             justify-content: center;
   }
   .menu .menu__container {
+    display: block;
     margin-top: 45px;
   }
 }
@@ -729,6 +746,10 @@ h3 {
 @media (min-width: 1199px) {
   .portfolio {
     text-align: center;
+    min-height: 672px;
+    background-image: url("../img/Background-Portf-desk.jpg");
+    background-position: center top;
+    margin-bottom: 0;
   }
   .portfolio__wrapper {
     width: 1000px;
@@ -799,7 +820,7 @@ h3 {
 }
 @media (min-width: 1199px) {
   .scroll {
-    margin-top: 45px;
+    margin-top: 10px;
   }
   .scroll__text {
     font-size: 11.25px;

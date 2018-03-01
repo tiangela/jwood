@@ -157,7 +157,7 @@
 @media @desktop-widths {
   .menu {
     &--main {
-      display: block;
+        display: block;
     }
     .menu__toggle {
       display: none;
@@ -171,7 +171,10 @@
       padding-top: 25px;
       padding-bottom: 25px;
       &--main {
-        color: @border-grey;
+        color: @text-grey;
+      }
+      &--opacity {
+        opacity: 0.5;
       }
     }
 
@@ -180,9 +183,13 @@
       padding-top: 0;
       padding-bottom: 0;
       border-top: none;
+      border-bottom: 1px solid @text-grey;
       display: block;
       margin: 0 auto;
       margin-bottom: 45px;
+      &--opacity {
+        opacity: 0.8;
+      }
     }
 
     .menu__list {
@@ -193,6 +200,7 @@
     }
 
     .menu__container {
+      display: block;
       margin-top: 45px;
     }
   }
