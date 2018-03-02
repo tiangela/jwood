@@ -58,6 +58,7 @@
     //  * Remove the gray background color from active links in IE 10.
     a {
     	background: transparent;
+      outline: 0;
     	//  * Improve readability when focused and also mouse hovered in all browsers.
     	&:active,
     	&:hover {
@@ -155,7 +156,14 @@
   }
 
   //  * Address `overflow` set to `hidden` in IE 8/9/10/11.
-  button { overflow: visible;}
+  button {
+    outline: none;
+    overflow: visible;
+    &:active,
+    &:hover {
+      outline: 0;
+    }
+  }
 
   //  * Address inconsistent `text-transform` inheritance for `button` and `select`.
   //  * All other form control elements do not inherit `text-transform` values.

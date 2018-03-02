@@ -38,6 +38,7 @@ template {
 }
 a {
   background: transparent;
+  outline: 0;
 }
 a:active,
 a:hover {
@@ -110,7 +111,12 @@ textarea {
   margin: 0;
 }
 button {
+  outline: none;
   overflow: visible;
+}
+button:active,
+button:hover {
+  outline: 0;
 }
 button,
 select {
@@ -223,7 +229,7 @@ h2 {
   padding: 0;
   margin: 0;
   font-size: 40px;
-  line-height: 120px;
+  line-height: 80px;
 }
 @media (min-width: 700px) {
   h2 {
@@ -241,7 +247,8 @@ h3 {
   padding: 0;
   margin: 0;
   font-size: 12px;
-  line-height: 48.93px;
+  line-height: 41.93px;
+  letter-spacing: 2px;
 }
 @media (min-width: 700px) {
   h3 {
@@ -273,6 +280,8 @@ h3 {
 }
 .about__title {
   color: #202020;
+  letter-spacing: 4px;
+  margin-top: 22px;
 }
 .about__text {
   margin: 0;
@@ -281,18 +290,20 @@ h3 {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 35px;
+  letter-spacing: 1px;
+  padding-right: 13px;
 }
 .about__text--indent {
-  margin-top: 40px;
-  margin-bottom: 44px;
+  margin-top: 35px;
+  margin-bottom: 28px;
 }
 .about__sign {
   width: 160px;
   height: 28px;
   background: url("../img/sign.jpg") no-repeat;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 @media (min-width: 700px) {
   .about__text {
@@ -343,16 +354,20 @@ h3 {
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 7px;
+  padding-bottom: 39px;
   border-bottom: 1px solid #dcdcdc;
 }
 .contacts__info {
   font-family: "Nexalight", Arial, sans-serif;
-  font-size: 24px;
+  font-size: 21px;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 3px;
+  letter-spacing: 1px;
+}
+.contacts__info--mail {
+  font-size: 26px;
 }
 .contacts__social {
   background-image: url("../img/spritesheet.png");
@@ -431,7 +446,7 @@ h3 {
   background-position: center;
 }
 .header__wrapper {
-  padding-top: 125px;
+  padding-top: 70px;
   margin-bottom: 40px;
   position: relative;
   background-image: url("../img/Background-Head-mob.jpg");
@@ -477,9 +492,6 @@ h3 {
     padding-top: 0;
   }
 }
-.main {
-  padding-top: 40px;
-}
 .main__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -513,7 +525,7 @@ h3 {
 }
 .menu .menu__toggle {
   position: absolute;
-  top: -80px;
+  top: -35px;
   right: 0;
   z-index: 40;
   display: block;
@@ -536,10 +548,13 @@ h3 {
 }
 .menu--closed .menu__container {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .menu--closed .menu__wrapper {
   display: none;
+}
+.menu--open {
+  padding-top: 55px;
 }
 .menu--open .menu__container {
   display: none;
@@ -561,7 +576,7 @@ h3 {
   height: 45px;
   content: "";
   background-image: url("../img/Logo-mini.png");
-  top: -85px;
+  top: -40px;
   left: 0;
 }
 .menu--nojs .menu__toggle {
@@ -589,7 +604,8 @@ h3 {
   text-decoration: none;
   color: #f1f1f1;
   text-align: left;
-  padding-left: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 32px;
 }
 .menu__link--contact {
@@ -606,7 +622,7 @@ h3 {
   font-weight: lighter;
   color: #f1f1f1;
   display: block;
-  padding-top: 18px;
+  padding-top: 13px;
 }
 .menu__title span {
   font-family: "Nexabold", Arial, sans-serif;
@@ -684,8 +700,8 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 923px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 35px;
+  margin-bottom: 22px;
 }
 .portfolio__container {
   width: 280px;
@@ -710,10 +726,14 @@ h3 {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
           justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 6px;
 }
 .portfolio__title {
   padding: 0;
   margin: 0;
+  padding-top: 17px;
+  letter-spacing: 4px;
   font-family: "Nexalight", Arial, sans-serif;
   font-weight: lighter;
   color: #f1f1f1;
@@ -786,7 +806,7 @@ h3 {
   width: 32px;
   height: 32px;
   bottom: 0;
-  right: 48%;
+  right: 45%;
   background-image: url("../img/scroll-icon-dark.png");
   background-repeat: no-repeat;
 }
@@ -797,7 +817,8 @@ h3 {
   font-family: "Nexabold", Arial, sans-serif;
   font-size: 14px;
   line-height: normal;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  margin-left: -1px;
   position: relative;
 }
 .scroll__text--header {
