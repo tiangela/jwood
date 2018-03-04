@@ -12,7 +12,7 @@
 
   .menu__toggle {
     position: absolute;
-    top: -80px;
+    top: -35px;
     right: 0;
     z-index: 40;
     display: block;
@@ -38,7 +38,7 @@
 
     .menu__container {
       display: block;
-      margin-bottom: 30px;
+      margin-bottom: 100px;
     }
 
     .menu__wrapper {
@@ -47,6 +47,7 @@
   }
 
   &--open {
+    padding-top: 55px;
     .menu__container {
       display: none;
     }
@@ -70,7 +71,7 @@
     height: 45px;
     content: "";
     background-image: url("../img/Logo-mini.png");
-    top: -85px;
+    top: -40px;
     left: 0;
   }
 
@@ -106,7 +107,8 @@
   text-decoration: none;
   color: @text-white;
   text-align: left;
-  padding-left: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 32px;
 
   &--contact {
@@ -126,7 +128,7 @@
   font-weight: lighter;
   color: @text-white;
   display: block;
-  padding-top: 18px;
+  padding-top: 13px;
 
   span {
     font-family: "Nexabold", Arial, sans-serif;
@@ -157,7 +159,7 @@
 @media @desktop-widths {
   .menu {
     &--main {
-      display: block;
+        display: block;
     }
     .menu__toggle {
       display: none;
@@ -171,7 +173,10 @@
       padding-top: 25px;
       padding-bottom: 25px;
       &--main {
-        color: @border-grey;
+        color: @text-grey;
+      }
+      &--opacity {
+        opacity: 0.5;
       }
     }
 
@@ -180,9 +185,13 @@
       padding-top: 0;
       padding-bottom: 0;
       border-top: none;
+      border-bottom: 1px solid @text-grey;
       display: block;
       margin: 0 auto;
       margin-bottom: 45px;
+      &--opacity {
+        opacity: 0.8;
+      }
     }
 
     .menu__list {
@@ -193,6 +202,7 @@
     }
 
     .menu__container {
+      display: block;
       margin-top: 45px;
     }
   }

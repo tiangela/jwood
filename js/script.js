@@ -11,13 +11,11 @@ anchors.forEach(function(item) {
     e.preventDefault();
 
     // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
-    let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top;
-
-    // запускаем интервал, в котором
+    let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
+      // запускаем интервал, в котором
     let scroller = setInterval(function() {
         // считаем на сколько скроллить за 1 такт
-    let scrollBy = coordY / framesCount;
-
+        let scrollBy = coordY / framesCount
       // если к-во пикселей для скролла за 1 такт больше расстояния до элемента
       // и дно страницы не достигнуто
       if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {

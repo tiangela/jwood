@@ -1,17 +1,21 @@
  .contacts__container {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 7px;
+  padding-bottom: 39px;
   border-bottom: 1px solid @border-grey;
 }
 
 .contacts__info {
   font-family: "Nexalight", Arial, sans-serif;
-  font-size: 24px;
+  font-size: 21px;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 3px;
+  letter-spacing: 1px;
+  &--mail {
+  font-size: 26px;
+  }
 }
 
 .contacts__social {
@@ -42,4 +46,14 @@
    .contacts__info {
      font-size: 50px;
    }
+}
+
+@media @desktop-widths {
+  .contacts__info {
+    font-size: 37.5px;
+    margin-bottom: 15px;
+  }
+  .contacts__container {
+    padding-top: 0;
+  }
 }
