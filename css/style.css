@@ -806,7 +806,7 @@ h3 {
   width: 32px;
   height: 32px;
   bottom: 0;
-  right: 45%;
+  right: 43%;
   background-image: url("../img/scroll-icon-dark.png");
   background-repeat: no-repeat;
 }
@@ -832,6 +832,12 @@ h3 {
   color: #bebebe;
 }
 @media (min-width: 700px) {
+  .scroll--portfolio {
+    margin-top: 80px;
+  }
+  .scroll::after {
+    right: 46%;
+  }
   .scroll__text {
     font-size: 18px;
   }
@@ -841,7 +847,16 @@ h3 {
 }
 @media (min-width: 1199px) {
   .scroll {
-    margin-top: 10px;
+    margin-top: -20px;
+  }
+  .scroll--about {
+    margin-top: 25px;
+  }
+  .scroll--portfolio {
+    margin-top: -5px;
+  }
+  .scroll::after {
+    left: 49%;
   }
   .scroll__text {
     font-size: 11.25px;
