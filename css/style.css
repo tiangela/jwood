@@ -770,6 +770,7 @@ h3 {
     background-image: url("../img/Background-Portf-desk.jpg");
     background-position: center top;
     margin-bottom: 0;
+    margin-top: 25px;
   }
   .portfolio__wrapper {
     width: 1000px;
