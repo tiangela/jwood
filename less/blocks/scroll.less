@@ -15,7 +15,7 @@
   width: 32px;
   height: 32px;
   bottom: 0;
-  right: 45%;
+  right: 43%;
   background-image: url("../img/scroll-icon-dark.png");
   background-repeat: no-repeat;
 }
@@ -43,6 +43,16 @@
 }
 
 @media @tablet-widths {
+  .scroll {
+    &--portfolio {
+      margin-top: 80px;
+    }
+  }
+
+  .scroll::after {
+    right: 46%;
+  }
+
   .scroll__text {
     font-size: 18px;
     &--about span {
@@ -53,7 +63,17 @@
 
 @media @desktop-widths {
   .scroll {
-    margin-top: 10px;
+    margin-top: -20px;
+    &--about {
+      margin-top: 25px;
+    }
+    &--portfolio {
+      margin-top: -5px;
+    }
+  }
+
+  .scroll::after {
+    left: 49%;
   }
   .scroll__text {
     font-size: 11.25px;
