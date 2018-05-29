@@ -389,6 +389,12 @@ h3 {
 .contacts__social--inst {
   background-position: -72px -5px;
 }
+.contacts__social:hover {
+  opacity: .8;
+}
+.contacts__social:active {
+  opacity: .5;
+}
 @media (min-width: 700px) {
   .contacts__container {
     padding-bottom: 74px;
@@ -611,6 +617,12 @@ h3 {
 .menu__link--contact {
   padding-bottom: 0;
 }
+.menu__link:hover {
+  color: #fbfafa;
+}
+.menu__link:active {
+  color: #202020;
+}
 .menu__wrapper {
   padding-top: 28px;
   padding-bottom: 28px;
@@ -674,6 +686,12 @@ h3 {
   }
   .menu .menu__link--main {
     color: #cdcdcd;
+  }
+  .menu .menu__link--main:hover {
+    color: #f1f1f1;
+  }
+  .menu .menu__link--main:active {
+    color: #b9b7b7;
   }
   .menu .menu__link--opacity {
     opacity: 0.5;
