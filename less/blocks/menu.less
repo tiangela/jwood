@@ -116,6 +116,14 @@
   }
 }
 
+.menu__link:hover {
+  color: @link-hover;
+}
+
+.menu__link:active {
+  color: @dark-grey;
+}
+
 .menu__wrapper {
   padding-top: 28px;
   padding-bottom: 28px;
@@ -185,6 +193,12 @@
       padding-bottom: 25px;
       &--main {
         color: @text-grey;
+      }
+      &--main:hover {
+        color: @text-white;
+      }
+      &--main:active {
+        color: @link-active
       }
       &--opacity {
         opacity: 0.5;
